@@ -1,0 +1,5 @@
+[
+    {"bookId": 1, "title": "Harry Potter", "author": "JK Rowling", "category": "Fiction", "year": 1997},
+    {"bookId": 2, "title": "Game of Thrones : A song of Ice and Fire", "author": "George R.R.Martin", "category": "Fiction", "year": 1996},
+    {"bookId": 3, "title": "Hunger Games", "author": "Suzanne Collins", "category": "Novel", "year": 2008}
+]

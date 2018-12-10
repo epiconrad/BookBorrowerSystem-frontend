@@ -1,0 +1,10 @@
+<div class="log-form">
+    <h2>Login to your account</h2>
+    <form>
+        <input type="text" title="username" placeholder="username" [(ngModel)]="username" name="username" required/>
+        <input type="password" title="password" placeholder="password" [(ngModel)]="password" name="password" required/>
+        <button type="submit" class="btn" (click)="login()">Login</button>
+        <a class="signup" routerLink="/register">Don't have an account? Sign Up </a>
+    </form>
+</div>
+

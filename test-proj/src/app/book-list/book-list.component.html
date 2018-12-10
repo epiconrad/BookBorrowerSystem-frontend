@@ -1,0 +1,32 @@
+<div class="container-fluid mb-6"> 
+    <div class="text-left">
+            <h3 class="jumbotron container-fluid">CATALOG</h3>
+    </div>
+    <table class="table table-sm table-hover">
+            <tr>
+                    <th>Reference #</th>
+                    <th>Book Title</th> 
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Year Published</th>
+            </tr>
+            <tr *ngFor="let book of books">
+                <td>{{book.bookId}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.category}}</td>
+                <td>{{book.year}}</td>
+                <td><button class="btn btn-primary" routerLink="">Borrow</button>
+                    <button class="btn btn-danger" >Return</button>
+                    <!--<button *ngIf="!confirmDelete" class="btn btn-danger" (click)="confirmDelete=true">Delete</button>
+    -->
+                </td>
+                <!---<span *ngIf="confirmDelete">
+                    <span>Are you sure you want to delete?</span>
+                    <button class="btn btn-danger" (click)="onDeleteClick(book.bookId)">Yes</button>
+                    <button class="btn btn-primary" (click)="confirmDelete=false">No</button>
+                </span>-->
+            </tr>
+    </table>
+</div>  
+      
